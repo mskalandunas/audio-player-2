@@ -5,26 +5,18 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Audio Player</title>
+  <meta name="description" content="A better looking audio player">
+  <meta name="author" content="Mike Skalandunas <mskalandunas@gmail.com>">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
@@ -34,9 +26,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="twelve columns" style="margin-top: 25%">
+
+        <div class="row">
+          <div class="play-bar"></div>
+        </div>
+
+        <div class="row">
+          <div class="six columns">
+            <span>
+              <i class="fa fa-fast-backward"></i>
+            </span>
+
+            <span>
+              <i class="fa fa-play"></i>
+            </span>
+
+            <span>
+              <i class="fa fa-stop"></i>
+            </span>
+
+            <span>
+              <i class="fa fa-fast-forward"></i>
+            </span>
+          </div>
+
+          <div class="six columns">
+            <span id="time">00:00</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
